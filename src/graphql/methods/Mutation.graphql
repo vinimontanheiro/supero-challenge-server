@@ -1,0 +1,7 @@
+
+type Mutation {    
+  login(email: String!, password: String!): User
+  newAccount(name: String!, email:String!, password: String!): Response
+  updateAccount(id:Int!, name: String!, email:String!): Response
+  removeAccount(id:Int!): Response
+}

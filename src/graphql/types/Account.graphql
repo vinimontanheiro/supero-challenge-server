@@ -1,0 +1,12 @@
+type Account {
+  id: ID!,
+  name: String,
+  email: String,
+  salt: String,
+  created: String
+}
+
+input AccountInput {
+  name: String,
+  email: String
+}

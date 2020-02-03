@@ -1,0 +1,5 @@
+type Query {
+   getAccountProfile: Account
+   getAccount(id:Int!): Account
+   listAccounts:[Account!],
+}
