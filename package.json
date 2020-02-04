@@ -25,6 +25,7 @@
     "lodash": "^4.17.11",
     "merge-graphql-schemas": "^1.5.3",
     "moment-timezone": "^0.5.21",
+    "mongoose": "^5.8.11",
     "pg": "^7.14.0",
     "querystring": "^0.2.0",
     "ramda": "^0.25.0",
@@ -45,6 +46,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.2.0",
     "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -62,12 +64,11 @@
     "supertest": "^3.1.0"
   },
   "scripts": {
-    "build": "babel -d ./build ./src --copy-files",
-    "postcheckout": "yarnhook",
-    "prod": "set NODE_ENV=production node ./build/index.js",
-    "prestart": "yarn build",
-    "start": "set NODE_ENV=development nodemon ./src/index.js --exec babel-node",
+    "build": "set NODE_ENV=production && babel -d ./build ./src --copy-files",
+    "prod": "set NODE_ENV=production && node -r ./node_modules/dotenv/config ./build/index.js",
+    "start": "set NODE_ENV=development && nodemon ./src/index.js --exec \"node --require ./node_modules/dotenv/config --require babel-register\"",
     "lint": "eslint src",
-    "prepush": "yarn lint && yarn build"
+    "prepush": "yarn lint && yarn build",
+    "docker": "docker-startup.sh &"
   }
 }

@@ -1,0 +1,13 @@
+type Book {
+  _id: ID!,
+  title: String!,
+  image: String,
+  isbn: Int,
+  author: String!,
+  publisher: String!,
+  year: Int,
+  language: String,
+  weight: Int,
+  dimensions: String,
+  created: String
+}

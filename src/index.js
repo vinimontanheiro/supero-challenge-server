@@ -2,6 +2,9 @@ import engine from './services/engine';
 import logger from './services/logger';
 import graphQLServer from './server';
 import { SERVER_PORT, isProduction } from './constants';
+import connectMongoDB from './database/mongo';
+
+connectMongoDB();
 
 if (isProduction) {
   engine.listen({

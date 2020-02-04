@@ -41,3 +41,16 @@ export const generateHashPassword = password => {
     hashPassword,
   };
 };
+
+export const getRandomString = length => {
+  const mask = `abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789`;
+  let result = ``;
+  for (let i = length; i > 0; i -= 1) result += mask[Math.floor(Math.random() * mask.length)];
+  return result;
+};
+
+export const getRandomInt = (min, max) => {
+  const m = Math.ceil(min) || 0;
+  const ma = Math.floor(max) || 13;
+  return Math.floor(Math.random() * (ma - m)) + m;
+};

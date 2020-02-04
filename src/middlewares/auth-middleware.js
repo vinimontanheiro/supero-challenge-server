@@ -20,7 +20,8 @@ export default (req, res, next) => {
 
   if (
     (query && query.includes(QUERY_TYPE.LOGIN)) ||
-    (query && query.includes(QUERY_TYPE.NEW_ACCONT))
+    (query && query.includes(QUERY_TYPE.NEW_ACCONT)) ||
+    (query && query.includes(QUERY_TYPE.LIST_BOOK))
   ) {
     return next();
   }
