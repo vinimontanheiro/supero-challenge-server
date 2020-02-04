@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { JWT_SECRET, isProduction, QUERY_TYPE } from '../constants';
+import { JWT_SECRET, QUERY_TYPE } from '../constants';
 import { Unauthorized } from '../services/error';
 import logger from '../services/logger';
 

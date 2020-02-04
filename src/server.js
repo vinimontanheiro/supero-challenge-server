@@ -59,5 +59,4 @@ graphQLServer.get(`/`, (req, res) =>
   }),
 );
 
-
 export default graphQLServer;
