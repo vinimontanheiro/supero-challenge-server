@@ -13,11 +13,9 @@ const connectMongoDB = () => {
     PORT: process.env.MONGODB_PORT,
   };
 
-  // const URL = `mongodb://${config.USER}:${config.PASSWORD}@${config.HOST}:${config.PORT}/${
-  //   config.DATABASE
-  // }`;
-
-  const URL = `mongodb://localhost:27017/${config.DATABASE}`;
+  const URL = `mongodb://${config.USER}:${config.PASSWORD}@${config.HOST}:${config.PORT}/${
+    config.DATABASE
+  }`;
 
   mongoose.connect(
     URL,
