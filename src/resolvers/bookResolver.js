@@ -1,7 +1,7 @@
 import bookList from '../repository/bookRepository';
 
-const listBooks = async () => {
-  const books = await bookList();
+const listBooks = async (_, { term, year }) => {
+  const books = await bookList({ term, year });
   return books;
 };
 

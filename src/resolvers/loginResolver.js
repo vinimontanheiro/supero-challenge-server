@@ -4,7 +4,6 @@ import { getAccountByEmail } from '../repository/accountRepository';
 
 const login = async (_, { email, password }) => {
   const account = await getAccountByEmail(email);
-  console.log(`account >> `, account);
   if (account) {
     const { salt, password: storedPassword } = account;
     const hashPassword = generatePasswordHash({ password, salt });

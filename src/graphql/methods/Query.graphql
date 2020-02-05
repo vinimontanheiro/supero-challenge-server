@@ -2,5 +2,5 @@ type Query {
    getAccountProfile: Account
    getAccount(id:Int!): Account
    listAccounts:[Account!],
-   listBooks:[Book]
+   listBooks(term:String, year:Int):[Book]
 }

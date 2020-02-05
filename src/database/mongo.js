@@ -6,7 +6,7 @@ import { LANGUAGE } from '../constants';
 
 const connectMongoDB = () => {
   const config = {
-    HOST: process.env.MONGODB_HOST,
+    HOST: `localhost`,
     USER: process.env.MONGODB_USER,
     PASSWORD: process.env.MONGODB_PASSWORD,
     DATABASE: process.env.MONGODB_DB,
@@ -35,7 +35,7 @@ const connectMongoDB = () => {
     for (let i = 0; i < 50; i++) {
       addBook({
         title: `${getRandomString(16)}`,
-        image: `https://upload.wikimedia.org/wikipedia/commons/d/dd/Gray_book.png`,
+        image: `http://upload.wikimedia.org/wikipedia/commons/d/dd/Gray_book.png`,
         isbn: getRandomInt(1000, 1000000000),
         author: `${getRandomString(10)}`,
         publisher: `${getRandomString(10)}`,
