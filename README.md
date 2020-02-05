@@ -1,6 +1,5 @@
 
-### Servidor NodeJS com MongoDB, Graphql e um exemplo de migrations Flyway usando SQL 
-
+## Servidor NodeJS com MongoDB, Graphql e um exemplo de migrations Flyway usando SQL; o servidor também possui autenticação com JWT Token
 
 ## Dependências:
 
@@ -40,9 +39,7 @@ $ ./docker-startup.sh // From git bash terminal
 $ yarn build && yarn prod 
 ```
 
-```
 ### Se por acaso quiserem rodar sem o Docker, as migrações estão em
-```
 
 ```
 - project-folder
@@ -52,10 +49,33 @@ $ yarn build && yarn prod
         - sql
 ```
 
-## GRAPHQL Playground
+### e basta alterar o arquivo
+
 ```
-- GET - http://127.0.0.1:9001/playground
+- project-folder
+  - .env 
 ```
 
-### Para facilitar coloquei o server em produção, basta acessar o endereço:
-### http://209.97.131.195:9001/playground
+## GRAPHQL API
+```
+- GET - http://127.0.0.1:9001/playground
+- GET - http://127.0.0.1:9001/graphql
+```
+
+### Para facilitar coloquei o server em produção, segue o link
+  - [DockerCompose](http://209.97.131.195:9001/playground)
+
+
+### Exemplo de Query e Mutation pelo playground:
+
+### usuário e senha padrão de login:
+  - e-mail : fulano@supero.com.br
+  - password: supero
+
+![Login](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/account.png)
+
+![Listar contas](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/account.png)
+
+![Listar livros](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/book.png)
+
+
