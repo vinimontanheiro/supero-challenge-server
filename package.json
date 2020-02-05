@@ -67,6 +67,9 @@
     "build": "NODE_ENV=production  babel -d ./build ./src --copy-files",
     "prod": "NODE_ENV=production node -r ./node_modules/dotenv/config ./build/index.js",
     "start": "NODE_ENV=development nodemon ./src/index.js --exec \"node --require ./node_modules/dotenv/config --require babel-register\"",
+    "build-win": "NODE_ENV=production && babel -d ./build ./src --copy-files",
+    "prod-win": "NODE_ENV=production && node -r ./node_modules/dotenv/config ./build/index.js",
+    "start-win": "NODE_ENV=development && nodemon ./src/index.js --exec \"node --require ./node_modules/dotenv/config --require babel-register\"",
     "lint": "eslint src",
     "prepush": "yarn lint && yarn build",
     "docker": "docker-startup.sh &"

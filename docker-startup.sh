@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## You need to run this on Git bash terminal
+## Solution for connection refuse on windows
 
 docker-compose up -d
 
