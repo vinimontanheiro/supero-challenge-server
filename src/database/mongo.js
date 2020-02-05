@@ -6,7 +6,7 @@ import { LANGUAGE } from '../constants';
 
 const connectMongoDB = () => {
   const config = {
-    HOST: `localhost`,
+    HOST: process.env.MONGODB_HOST,
     USER: process.env.MONGODB_USER,
     PASSWORD: process.env.MONGODB_PASSWORD,
     DATABASE: process.env.MONGODB_DB,
