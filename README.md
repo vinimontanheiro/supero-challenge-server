@@ -63,7 +63,7 @@ $ yarn build && yarn prod
 ```
 
 ### Para facilitar coloquei o server em produção, segue o link
-  - [DockerCompose](http://209.97.131.195:9001/playground)
+  - [Playground](http://209.97.131.195:9001/playground)
 
 
 ### Exemplo de Query e Mutation pelo playground:
