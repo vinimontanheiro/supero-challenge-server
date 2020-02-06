@@ -72,7 +72,7 @@ $ yarn build && yarn prod
   - e-mail : fulano@supero.com.br
   - password: supero
 
-![Login](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/account.png)
+![Login](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/login.png)
 
 ![Listar contas](https://raw.githubusercontent.com/vmontanheiro/supero-challenge-server/master/account.png)
 
