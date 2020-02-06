@@ -1,5 +1,5 @@
 
-## Servidor NodeJS com MongoDB, Graphql e um exemplo de migrations Flyway usando SQL; o servidor também possui autenticação com JWT Token
+## Servidor NodeJS com MongoDB, Graphql,um exemplo de migrations com Flyway e SQL; o servidor também possui autenticação com JWT Token
 
 ## Dependências:
 
